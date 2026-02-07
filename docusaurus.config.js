@@ -25,15 +25,15 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://<YOUR_GITHUB_USERNAME>.github.io',
+  url: 'https://yash-verma5.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/<YOUR_REPOSITORY_NAME>/',
+  baseUrl: '/Dynamic-Docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: '<YOUR_GITHUB_USERNAME>', // Usually your GitHub org/user name.
-  projectName: '<YOUR_REPOSITORY_NAME>', // Usually your repo name.
+  organizationName: 'yash-verma5', // Usually your GitHub org/user name.
+  projectName: 'Dynamic-Docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
