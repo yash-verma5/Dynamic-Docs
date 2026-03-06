@@ -22,7 +22,12 @@
 **Objective**: Develop the interactive `CarrierConfigSimulator`.
 **Requirements**: Build a component that swaps JSON configurations (Forza, C807, Terminal Express) in a live CodeBlock.
 
-### Phase 3: Integration
+### Phase 3: Integration & Deployment ✅
 **Status**: ✅ Complete
-**Objective**: Embed interactive elements and verify PDF downloads.
-**Requirements**: Place the Simulator in the `.md` file, wrap the content for `DownloadPdfWrapper`, and format Tabs.
+**Objective**: Embed interactive elements and verify live deployment.
+**Requirements**: Place the Simulator in the `.md` file, wrap the content for `DownloadPdfWrapper`, format Tabs, and deploy to GitHub Pages (Live at `https://yash-verma5.github.io/Dynamic-Docs/ARCHITECTURE`).
+
+### Phase 4: Personalize Landing Page ✅
+**Status**: ✅ Complete
+**Objective**: Transform the generic Docusaurus landing page into a personal portfolio of "Yash's Related Works".
+**Requirements**: Update site configuration, customize hero section, and refine feature highlights for a professional look.

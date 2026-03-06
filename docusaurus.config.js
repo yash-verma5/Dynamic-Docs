@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: "Yash's Projects",
+  tagline: 'Technical Documentation & Related Works',
   favicon: 'img/favicon.ico',
 
   markdown: {
@@ -90,9 +90,9 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: "Yash's Works",
         logo: {
-          alt: 'My Site Logo',
+          alt: "Yash's Works Logo",
           src: 'img/logo.svg',
         },
         items: [

@@ -17,4 +17,5 @@
 - Screenshot: `carrier_simulator_section_1771658914112.png`
 
 ## Status
-✅ **Complete**
+✅ **MISSION COMPLETE**
+Live at: [https://yash-verma5.github.io/Dynamic-Docs/ARCHITECTURE](https://yash-verma5.github.io/Dynamic-Docs/ARCHITECTURE)

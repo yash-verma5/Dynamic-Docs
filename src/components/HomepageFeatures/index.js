@@ -4,32 +4,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Solr Cloud Migration',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Successfully migrated large-scale Solr Standalone indices to SolrCloud, 
+        enhancing resilience and search performance using cursor-based pagination.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'NiFi Data Orchestration',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Built robust data pipelines in Apache NiFi for real-time extraction, 
+        transformation (JOLT), and schema-aware (Avro) document ingestion.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Interactive Documentation',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Leveraging Docusaurus and MDX to create interactive, living technical 
+        guides with embedded simulators and Mermaid diagrams.
       </>
     ),
   },
