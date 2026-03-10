@@ -1,0 +1,13 @@
+.glassNavWrapper {
+  /* Applying glassmorphism to the outer wrapper of the navbar */
+  background: var(--ifm-navbar-background-color);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glassNavWrapper :global(.navbar) {
+  /* Make the inner Docusaurus navbar transparent so the wrapper's background shows */
+  background-color: transparent !important;
+  box-shadow: none !important;
+}

@@ -1,0 +1,99 @@
+.blogCard {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.blogCard:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(124, 59, 237, 0.5); /* primary */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(124, 59, 237, 0.2);
+}
+
+.featuredCard {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 15px rgba(124, 59, 237, 0.4);
+}
+
+.featuredBadge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--ifm-color-primary);
+  color: #ffffff;
+  font-size: 0.625rem; /* 10px */
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-bottom-left-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  z-index: 10;
+}
+
+.cardContent {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tagBadge {
+  padding: 0.125rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.6875rem; /* 11px */
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  background-color: var(--ifm-color-emphasis-100); /* #161B22 near */
+  color: var(--ifm-color-primary-contrast-background); /* white */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: colors 0.2s ease;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  line-height: 1.375;
+}
+
+.titleLink {
+  color: inherit;
+  text-decoration: none;
+}
+.titleLink:hover {
+  text-decoration: underline;
+}
+
+.description {
+  color: #9CA3AF;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.metaContainer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #6B7280;
+}

@@ -1,0 +1,116 @@
+.exploreSection {
+  background-color: var(--ifm-background-color);
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.radialGlowLayer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at center, rgba(124, 58, 237, 0.08) 0%, transparent 70%);
+}
+
+.exploreContainer {
+  max-width: 80rem; /* 7xl */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.exploreTitle {
+  font-family: 'Syne', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--ifm-color-secondary);
+  margin-bottom: 5rem;
+  letter-spacing: -0.025em;
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .exploreTitle {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .exploreTitle {
+    font-size: 3.75rem;
+  }
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.glassCard {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.glassCard:hover {
+  border-color: rgba(124, 58, 237, 0.5); /* brand/50 */
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.1);
+}
+
+.cardTitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #F0F6FC;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cardDescription {
+  font-family: 'Inter', sans-serif;
+  color: #8B949E;
+  margin-bottom: 2rem;
+  line-height: 1.625;
+}
+
+.cardButton {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 0;
+  text-align: center;
+  border: 1px solid var(--ifm-color-secondary);
+  color: var(--ifm-color-secondary);
+  background-color: transparent;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.cardButton:hover {
+  background-color: var(--ifm-color-secondary);
+  color: var(--ifm-background-color);
+  text-decoration: none;
+}
