@@ -11,7 +11,7 @@
   left: 0;
   opacity: 0.4;
   pointer-events: none;
-  background-image: radial-gradient(circle, #30363d 1px, transparent 1px);
+  background-image: radial-gradient(circle, var(--site-dot-color) 1px, transparent 1px);
   background-size: 30px 30px;
 }
 
@@ -89,7 +89,7 @@
   max-width: 42rem;
   margin: 0 auto 3rem auto;
   font-size: 1.125rem;
-  color: #8B949E;
+  color: var(--site-text-muted);
   line-height: 1.625;
 }
 
@@ -148,8 +148,8 @@
 .secondaryButton {
   padding: 1rem 2rem;
   background-color: transparent;
-  border: 1px solid #374151;
-  color: #D1D5DB;
+  border: 1px solid var(--site-glass-border);
+  color: var(--ifm-font-color-base);
   font-weight: 700;
   border-radius: 8px;
   transition: all 0.3s ease;
@@ -157,8 +157,8 @@
 }
 
 .secondaryButton:hover {
-  border-color: #6B7280;
-  color: #D1D5DB;
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
   text-decoration: none;
 }
 

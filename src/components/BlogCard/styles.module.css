@@ -1,9 +1,9 @@
 .blogCard {
-  background: rgba(255, 255, 255, 0.03);
+  background-color: var(--site-glass-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+  border: 1px solid var(--site-glass-border);
+  border-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -80,9 +80,10 @@
   text-decoration: underline;
 }
 
-.description {
-  color: #9CA3AF;
+.blogDescription {
+  color: var(--site-text-muted);
   font-size: 0.875rem;
+  line-height: 1.6;
   margin-bottom: 1.5rem;
   flex-grow: 1;
 }

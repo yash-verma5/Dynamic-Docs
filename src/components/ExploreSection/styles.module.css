@@ -60,14 +60,16 @@
 }
 
 .glassCard {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(12px);
-  border-radius: 12px;
-  padding: 2rem;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: var(--site-glass-bg);
+  border: 1px solid var(--site-glass-border);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 2.5rem;
   height: 100%;
   transition: all 0.3s ease;
 }
@@ -89,9 +91,8 @@
 }
 
 .cardDescription {
-  font-family: 'Inter', sans-serif;
-  color: #8B949E;
-  margin-bottom: 2rem;
+  color: var(--site-text-muted);
+  font-size: 0.875rem;
   line-height: 1.625;
 }
 
