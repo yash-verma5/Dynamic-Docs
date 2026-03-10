@@ -7,17 +7,17 @@ export function ExploreSection() {
     {
       title: 'ARCHITECTURE',
       description: 'Comprehensive guide and technical reference for enterprise-level system architecture design.',
-      link: '/docs/architecture'
+      link: '/ARCHITECTURE'
     },
     {
       title: 'Solr Migration',
       description: 'Detailed technical reference for migrating search infrastructure to cloud-native Solr environments.',
-      link: '/docs/solr-migration'
+      link: '/Solr-Migration'
     },
     {
       title: 'Adoc Webhooks',
       description: 'Implementation guide for automated documentation workflows using AsciiDoc and webhooks.',
-      link: '/docs/adoc-webhooks'
+      link: '/adoc-webhooks'
     }
   ];
 
