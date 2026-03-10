@@ -25,7 +25,7 @@ export function HomepageHero() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
             </svg>
           </Link>
-          <Link to="/docs" className={styles.secondaryButton}>
+          <Link to="#documentation" className={styles.secondaryButton}>
             Explore Projects
           </Link>
         </div>
