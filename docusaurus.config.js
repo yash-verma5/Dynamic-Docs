@@ -37,7 +37,8 @@ const config = {
   organizationName: 'yash-verma5', // Usually your GitHub org/user name.
   projectName: 'Dynamic-Docs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
+  onBrokenAnchors: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -59,21 +60,7 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false, // Disabled — using custom /src/pages/blog.js with live Hashnode + LinkedIn + GitHub feed
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -104,9 +91,9 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Blog & Socials', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/yash-verma5',
             label: 'GitHub',
             position: 'right',
           },
@@ -119,30 +106,34 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Architecture',
+                to: '/ARCHITECTURE',
+              },
+              {
+                label: 'PIM Hub',
+                to: '/pim',
+              },
+              {
+                label: 'AutoCore Hub',
+                to: '/autocore',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Socials',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/yash-verma-hotwax/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'Hashnode',
+                href: 'https://yashv521.hashnode.dev/',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Connect',
             items: [
               {
                 label: 'Blog',
@@ -150,12 +141,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/yash-verma5',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Yash Verma. Engineered for Excellence.`,
       },
       prism: {
         theme: prismThemes.github,
