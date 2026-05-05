@@ -18,6 +18,18 @@ export function ExploreSection() {
       title: 'Adoc Webhooks',
       description: 'Implementation guide for automated documentation workflows using AsciiDoc and webhooks.',
       link: '/adoc-webhooks'
+    },
+    {
+      title: 'AutoCore Documentation Hub',
+      description: 'Interactive technical guides for the Automotive Aftermarket data lifecycle and integration architecture.',
+      link: '/autocore',
+      special: true
+    },
+    {
+      title: 'PIM Documentation Hub',
+      description: 'High-fidelity maps of the PIM backend data models, orchestrations, and fitment pipelines.',
+      link: '/pim',
+      special: true
     }
   ];
 
@@ -28,13 +40,13 @@ export function ExploreSection() {
         <h2 className={styles.exploreTitle}>Explore Documentation</h2>
         <div className={styles.gridContainer}>
           {docs.map((doc, idx) => (
-            <div key={idx} className={styles.glassCard}>
+            <div key={idx} className={`${styles.glassCard} ${doc.special ? styles.specialCard : ''}`}>
               <div>
                 <h3 className={styles.cardTitle}>{doc.title}</h3>
                 <p className={styles.cardDescription}>{doc.description}</p>
               </div>
               <Link to={doc.link} className={styles.cardButton}>
-                Read Document
+                {doc.special ? 'Enter Hub' : 'Read Document'}
               </Link>
             </div>
           ))}

@@ -20,9 +20,12 @@
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "html2pdf.js": "^0.14.0",
+    "lucide-react": "^1.11.0",
+    "mermaid": "^11.14.0",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-zoom-pan-pinch": "^3.4.4"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.9.2",

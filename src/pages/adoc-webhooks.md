@@ -4,6 +4,9 @@ import TabItem from '@theme/TabItem';
 import WebhookSimulator from '@site/src/components/WebhookSimulator';
 import Admonition from '@theme/Admonition';
 import DownloadPdfWrapper from '@site/src/components/DownloadPdfWrapper';
+import HomeBackButton from '@site/src/components/HomeBackButton';
+
+<HomeBackButton />
 
 # ADOC Webhook Integration Architecture
 **Date:** 2026-02-07  

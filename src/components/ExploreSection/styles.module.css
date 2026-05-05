@@ -115,3 +115,31 @@
   color: var(--ifm-background-color);
   text-decoration: none;
 }
+
+.specialCard {
+  border: 1px solid #FFD700; /* Gold */
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.95) 0%, rgba(40, 20, 20, 0.95) 100%);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.1);
+}
+
+.specialCard:hover {
+  border-color: #FF4500; /* OrangeRed/DeepRed */
+  box-shadow: 0 0 40px rgba(255, 69, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.specialCard .cardTitle {
+  color: #FFD700; /* Gold */
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.specialCard .cardButton {
+  border-color: #FFD700;
+  color: #FFD700;
+}
+
+.specialCard .cardButton:hover {
+  background-color: #FFD700;
+  color: #000000;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}

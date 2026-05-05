@@ -1,3 +1,7 @@
+import HomeBackButton from '@site/src/components/HomeBackButton';
+
+<HomeBackButton />
+
 # Solr Standalone → SolrCloud Migration
 ## Technical Documentation
 

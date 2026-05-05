@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap');
 
 :root {
-  --ifm-color-primary: #7C3AED;
-  --ifm-color-primary-dark: #6D28D9;
-  --ifm-color-primary-darker: #6124C2;
-  --ifm-color-primary-darkest: #501E9E;
-  --ifm-color-primary-light: #8A4EF0;
-  --ifm-color-primary-lighter: #935CF1;
-  --ifm-color-primary-lightest: #A87AF4;
+  --ifm-color-primary: #E53E3E;
+  --ifm-color-primary-dark: #C53030;
+  --ifm-color-primary-darker: #9B2C2C;
+  --ifm-color-primary-darkest: #742A2A;
+  --ifm-color-primary-light: #F56565;
+  --ifm-color-primary-lighter: #FC8181;
+  --ifm-color-primary-lightest: #FEB2B2;
   
-  --ifm-color-secondary: #00E5A0;
-  --ifm-color-secondary-contrast: #8B949E;
+  --ifm-color-secondary: #FFD700;
+  --ifm-color-secondary-contrast: #000000;
 
   /* Light Theme Defaults */
   --ifm-background-color: #ffffff;
@@ -46,3 +46,35 @@
   --site-dot-color: #30363d;
 }
 
+
+/* Middle Ground Layout Refinements */
+.table-of-contents {
+  border-left: 1px solid var(--ifm-color-emphasis-200) !important;
+  padding-left: 1.5rem !important;
+  font-size: 0.85rem;
+  opacity: 0.9;
+  max-width: 250px;
+}
+
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary) !important;
+  font-weight: 600;
+}
+
+/* Ensure wide tables don't break the layout */
+table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+/* Premium Gutter for Documentation */
+.theme-doc-markdown {
+  padding-right: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .theme-doc-sidebar-container {
+    display: none; /* Hide main sidebar earlier for more doc space */
+  }
+}
