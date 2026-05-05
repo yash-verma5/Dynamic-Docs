@@ -13,60 +13,87 @@ export const piesErd = `
 erDiagram
     %% Core Entities
     Item {
-        id itemId PK
-        id-long partNumber "e.g. BXD-1029"
-        very-short brandAaiaId
+        string itemId PK
+        string partNumber "e.g. BXD-1029"
+        string brandAaiaId
         date itemEffectiveDate
-        short-varchar status
+        string maintenanceType
+        string itemLevelGTIN
+        string partTerminologyID
     }
     
     PartAttribute {
-        id partAttributeId PK
-        name attributeId "e.g. Length, Weight"
-        url productAttribute
-        indicator padbAttribute
+        string productAttributeId PK
+        string attributeId "e.g. Length, Weight"
+        string attributeValue
+        boolean padbAttribute
+        string maintenanceType
+    }
+    
+    ExtendedProductInformation {
+        string extendedInformationId PK
+        string expiCode
+        string extendedProductInformation
+        string languageCode
+        string maintenanceType
     }
     
     Package {
-        id packageId PK
-        numeric packageLevelGtin
-        numeric quantityofEaches
-        indicator orderable
+        string packageId PK
+        string packageUOM
+        int quantityofEaches
+        string packageLevelGTIN
+        decimal weights
     }
     
     DigitalAsset {
-        id digitalAssetId PK
-        name fileName
-        url uri
-        very-short assetType
+        string digitalAssetId PK
+        string fileName
+        string uri
+        string assetType
+        int resolution
+        string fileType
     }
     
     Pricing {
-        id pricingId PK
+        string pricingId PK
         date effectiveDate
-        fixed-point price
-        very-short currencyCode
+        decimal price
+        string currencyCode
+        string priceSheetNumber
+        string priceType
     }
     
     KitComponent {
-        id kitComponentId PK
-        short-varchar componentPartNumber
-        numeric quantityInKit
+        string kitComponentId PK
+        string componentPartNumber
+        int quantityInKit
+        string componentBrand
+        string description
     }
     
     PartInterchange {
-        id partInterchangeId PK
-        id itemIdTo "Cross-Reference"
-        indicator qualityGradeLevel
+        string partInterchangeId PK
+        string itemIdTo "Cross-Reference"
+        string brandAaiaId
+        string partNumber
+        string interchangeQuantity
+    }
+
+    ItemDescription {
+        string descriptionId PK
+        string itemId FK
     }
 
     %% Relationships
-    Item ||--o{ PartAttribute : "ITEM_PA"
-    Item ||--o{ Package : "ITEM_PKG"
-    Item ||--o{ DigitalAsset : "ITEM_DFI"
-    Item ||--o{ Pricing : "ITEM_PRCE"
-    Item ||--o{ KitComponent : "ITEM_KITC"
-    Item ||--o{ PartInterchange : "ITEM_PATCG"
+    Item ||--o{ PartAttribute : "Has Attributes"
+    Item ||--o{ ExtendedProductInformation : "Has EXPI"
+    Item ||--o{ Package : "Has Packages"
+    Item ||--o{ DigitalAsset : "Has Assets"
+    Item ||--o{ Pricing : "Has Pricing"
+    Item ||--o{ KitComponent : "Has Kit Components"
+    Item ||--o{ PartInterchange : "Has Interchanges"
+    Item ||--o{ ItemDescription : "Has Descriptions"
 `;
 
 export const acesErd = `
