@@ -20,6 +20,11 @@ export function ExploreSection() {
       link: '/adoc-webhooks'
     },
     {
+      title: 'HotWax Order Routing',
+      description: 'Architectural specification of the HotWax order routing engine with interactive brokering sandbox.',
+      link: '/hotwax_order_routing_spec'
+    },
+    {
       title: 'AutoCore Documentation Hub',
       description: 'Interactive technical guides for the Automotive Aftermarket data lifecycle and integration architecture.',
       link: '/autocore',
